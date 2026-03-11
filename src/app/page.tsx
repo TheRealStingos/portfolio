@@ -1,5 +1,5 @@
 import Navbar from "@/src/components/Navbar";
-import AnimatedBackground from "@/src/components/AnimatedBackground";
+import Background from "@/src/components/Background";
 import About from "@/src/components/About";
 import Contact from "../components/Contact";
 import Badges from "../components/Badges";
@@ -7,13 +7,15 @@ import ProjectsSection from "../components/ProjectSection";
 
 export default function Home() {
   return (
-    <div>
-      <AnimatedBackground />
-      <Navbar />
-      <About />
-      <Badges />
-      <ProjectsSection />
-      <Contact />
+    <div className="relative min-h-screen">
+      <Background />
+
+      <div className="relative z-10">
+        <About />
+        <Badges />
+        <ProjectsSection />
+        <Contact />
+      </div>
     </div>
   );
 }

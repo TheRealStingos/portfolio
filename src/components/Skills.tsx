@@ -11,7 +11,7 @@ interface Skills{
 export default function Skills({ logo: Icon, title, description, variant = "card", iconSize = 32}: Skills) {
     if (variant === "badge") {
         return (
-            <div className="flex items-center justify-center gap-2 bg-black rounded-2xl m-2 p-2 h-12 w-32 transition-transform hover:scale-110 duration-75 hover:invert">
+            <div className="flex items-center justify-center gap-2 bg-blue-500 rounded-2xl m-2 p-2 h-12 w-32 transition-transform hover:scale-110 duration-75 hover:invert">
                 <div className=" flex items-center justify-center">
                     <Icon size={iconSize} />
                 </div>

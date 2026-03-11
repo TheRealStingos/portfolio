@@ -1,8 +1,11 @@
 export default function Contact() {
     return(
-        <div>
-            <h2>Let's Get In Touch!</h2>
-            <form>
+        <section className="flex justify-center gap-72">
+            <div>
+                <h2>Let's Get In Touch!</h2>
+                <p>Feel free to email me about anything!</p>
+            </div>
+            <form className="flex flex-col bg-amber-600">
                 <label htmlFor="name">Name</label>
                 <input type="text" placeholder="John Smith" required></input>
                 <label htmlFor="email">Enter your email</label>
@@ -11,6 +14,6 @@ export default function Contact() {
                 <input type="text" placeholder="What's on your mind?" required></input>
                 <button>Send</button>
             </form>
-        </div>
+        </section>
     )
 }

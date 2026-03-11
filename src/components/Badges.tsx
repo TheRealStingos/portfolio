@@ -9,7 +9,7 @@ export default function Badges() {
         <section className="flex gap-20 items-center justify-center">
             {/*Front End*/}
             <article className="flex flex-col items-center">
-                <h1>Front End</h1>
+                <h1 className="text-slate-900">Front End</h1>
                 <div className="grid grid-cols-3">
                     <Skills logo={FaHtml5} title="HTML5" description={null} variant="badge" />
                     <Skills logo={FaCss3Alt} title="CSS3" description={null} variant="badge" />
@@ -23,7 +23,7 @@ export default function Badges() {
 
             {/*Back End*/}
             <article className="flex flex-col items-center">
-                <h1>Back End</h1>
+                <h1 className="text-slate-900">Back End</h1>
                 <div className="grid grid-cols-2">
                     <Skills logo={FaNode} title="Node" description={null} variant="badge" />
                     <Skills logo={SiExpress} title="Express" description={null} variant="badge" />
@@ -36,7 +36,7 @@ export default function Badges() {
             
             {/*Tools*/}
             <article className="flex flex-col items-center">
-                <h1>Tooling & Infrastructure</h1>
+                <h1 className="text-slate-900">Tooling & Infrastructure</h1>
                 <div className="grid grid-cols-3">
                     <Skills logo={SiJest} title="Jest" description={null} variant="badge" />
                     <Skills logo={SiVitest} title="Vitest" description={null} variant="badge" />
