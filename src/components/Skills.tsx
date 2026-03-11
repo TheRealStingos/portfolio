@@ -20,10 +20,10 @@ export default function Skills({ logo: Icon, title, description, variant = "card
         )
     }
     return (
-        <div>
-            <Icon size={32} />
-            <h3>{title}</h3>
-            <p>{description}</p>
+        <div className="flex flex-col items-center justify-top rounded-2xl space-x-4 mx-8 p-2 w-80 h-40">
+            <Icon size={32}  color="#3b82f6"/>
+            <h3 className="text-slate-900 mt-2">{title}</h3>
+            <p className="text-slate-600 text-sm mt-4 text-center">{description}</p>
         </div>
     )
 }

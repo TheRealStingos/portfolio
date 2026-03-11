@@ -6,21 +6,7 @@ import portrait from "../assets/portrait.png"
 
 export default function Hero() {
     return(
-        <section className="flex flex-row-reverse min-h-screen items-center px-100">
-            <div className="w-50 h-50 rounded-full overflow-hidden ring-4 ring-blue-400 shadow-xl shadow-blue-200">
-                <Image
-                src={portrait}
-                alt="A photo of Justin" 
-                width={300}
-                height={300}
-                className="w-full h-full object-cover"
-                style={{ 
-                    objectPosition: "60% 50%", 
-                    transform: "scale(5.3)",
-                    transformOrigin: "71% 12%"
-                }}
-                />
-            </div>
+        <section className="h-screen flex items-center px-90">
             <div className="mr-70">
                 <p className="text-blue-500 mb-2">Hi, my name is</p>
                 <h1 className="text-slate-900 text-6xl font-bold">Justin Moore</h1>
