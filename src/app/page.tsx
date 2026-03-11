@@ -1,4 +1,4 @@
-import Navbar from "@/src/components/Navbar";
+import Hero from "@/src/components/Hero";
 import Background from "@/src/components/Background";
 import About from "@/src/components/About";
 import Contact from "../components/Contact";
@@ -11,6 +11,7 @@ export default function Home() {
       <Background />
 
       <div className="relative z-10">
+        <Hero />
         <About />
         <Badges />
         <ProjectsSection />

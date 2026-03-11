@@ -1,6 +1,6 @@
 export default function Contact() {
     return(
-        <section className="flex justify-center gap-72">
+        <section id="contact" className="flex justify-center gap-72">
             <div>
                 <h2>Let's Get In Touch!</h2>
                 <p>Feel free to email me about anything!</p>

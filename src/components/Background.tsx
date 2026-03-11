@@ -26,22 +26,21 @@ export default function Background() {
         fpsLimit: 60,
         detectRetina: false,
         particles: {
-          number: { value: 80 },
+          number: { value: 120 },
           color: { value: "#60a5fa" },
           links: {
             enable: true,
             color: "#93c5fd",
-            opacity: 0.4,
+            opacity: 0.5,
             distance: 150,
           },
           move: { enable: true, speed: 1 },
-          opacity: { value: 0.5 },
+          opacity: { value: .7 },
           size: { value: { min: 1, max: 3 } },
         },
         interactivity: {
           events: {
             onHover: { enable: true, mode: "grab" },
-            onClick: { enable: true, mode: "push" },
           },
         },
       }}
