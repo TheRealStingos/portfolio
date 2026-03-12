@@ -41,8 +41,8 @@ export default function Contact() {
                     my inbox is always open.
                     </p>
                 <div className="flex gap-4 mt-8">
-                    <FaGithub className="text-blue-400 text-2xl" />
-                    <FaLinkedin className="text-blue-400 text-2xl" />
+                    <a href="https://github.com/TheRealStingos"><FaGithub size={23} className="text-blue-400 text-2x hover:invert hover:scale-110" /></a>
+                    <a href="https://www.linkedin.com/in/justinmoore96/"><FaLinkedin className="text-blue-400 text-2xl hover:invert hover:scale-110" /></a>
                 </div>
                 </div>
 
@@ -69,7 +69,7 @@ export default function Contact() {
                     <button
                         onClick={handleSubmit}
                         disabled={status === "sending"}
-                        className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:scale-105 transition-transform duration-75 cursor-pointer disabled:opacity-50"
+                        className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:scale-110 transition-transform duration-75 cursor-pointer disabled:opacity-50 hover:invert"
                     >
                         {status === "sending" ? "Sending..." : "Send"}
                     </button>
