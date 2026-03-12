@@ -1,6 +1,6 @@
 import Project from "./Project"
-import placeholder from "../assets/image-placeholder-icon-15-1769662654.png"
 import memory from "../assets/memoryScreen.png"
+import placeholder from "../assets/image-placeholder-icon-15-1769662654.png"
 
 
 export default function ProjectsSection() {
