@@ -7,7 +7,7 @@ export default function About() {
     return(
         <div id="about">
             <section className="flex mb-20">
-                <div className="w-80 h-80 rounded-full overflow-hidden ring-4 ring-blue-400 shadow-xl shadow-blue-200 mx-auto">
+                <div className="hidden md:block w-80 h-80 rounded-full overflow-hidden ring-4 ring-blue-400 shadow-xl shadow-blue-200 mx-auto">
                     <Image
                     src={portrait}
                     alt="A photo of Justin" 
@@ -34,9 +34,10 @@ export default function About() {
             <div className="flex justify-center items-center mb-20">
                 <Skills logo={FaTerminal} title="Software Development" description="Strong Full Stack foundations with experience in JavaScript, TypeScript, and Python" />
                 <div className="bg-blue-500 md:h-40 w-1"></div>
-                <Skills logo={FaReact} title="Front-End Development" description="test" />
+                <Skills logo={FaReact} title="Front-End Development" description="Crafting fast and responsive experiences suitable for any screen or device" />
                 <div className="bg-blue-500 md:h-40 w-1"></div>
-                <Skills logo={FaDocker} title="Deployment" description="I love docker" />
+                <Skills logo={FaDocker} title="Deployment" description="The only thing I love more than making apps is sharing them! AWS, Docker, Cloudflare...
+                I use whatever tools are needed to reach the user" />
             </div>
         </div>
     )
