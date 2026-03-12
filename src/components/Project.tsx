@@ -12,8 +12,8 @@ interface Project {
 
 export default function Project({ screenshot, title, description, repo, demo }: Project) {
   return (
-    <div className="flex m-auto space-x-72 items-center">
-        <div className="flex flex-col w-72 h-60 p-2 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:shadow-blue-100 transition-all duration-200">
+    <div className="flex m-auto gap-42 items-center">
+        <div className="flex flex-col w-88 h-60 p-2 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:shadow-blue-100 transition-all duration-200">
             <div className="flex flex-col">
             <h1 className="text-2xl text-slate-900 text-center mt-8">{title}</h1>
             <p className="text-slate-600 mt-4 text-center">{description}</p>
@@ -24,7 +24,7 @@ export default function Project({ screenshot, title, description, repo, demo }: 
             </div>
         </div>
         <div className="flex flex-col items-center bg-white border border-slate-200 shadow-sm rounded-xl p-3 m-6">
-            <Image src={screenshot} alt={title} height={288} width={512} className="rounded-2xl"/>
+            <Image src={screenshot} alt={title} height={288} width={512} className="rounded-xl"/>
         </div>
     </div>
   )
