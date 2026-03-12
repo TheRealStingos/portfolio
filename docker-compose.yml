@@ -7,3 +7,9 @@ services:
       - "127.0.0.1:3000:3000"
     environment:
       - RESEND_API_KEY=${RESEND_API_KEY}
+    networks:
+      - vpn_network
+
+networks:
+  vpn_network:
+    external: true
