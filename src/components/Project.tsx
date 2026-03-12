@@ -13,7 +13,7 @@ interface Project {
 export default function Project({ screenshot, title, description, repo, demo }: Project) {
   return (
     <div className="flex m-auto space-x-72 items-center">
-        <div className="flex flex-col w-72 h-60 p-2 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:shadow-blue-100 transition-all duration-200 hover:-translate-y-1">
+        <div className="flex flex-col w-72 h-60 p-2 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:shadow-blue-100 transition-all duration-200">
             <div className="flex flex-col">
             <h1 className="text-2xl text-slate-900 text-center mt-8">{title}</h1>
             <p className="text-slate-600 mt-4 text-center">{description}</p>

@@ -1,12 +1,15 @@
-import About from "./About"
-import Projects from "./ProjectSection"
-import Contact from "./Contact"
-import Image from "next/image"
-import portrait from "../assets/portrait.png"
+"use client"
+
+import { easeOut, motion } from "motion/react"
+import { FaChevronDown } from "react-icons/fa"
 
 export default function Hero() {
     return(
-        <section className="h-screen flex items-center px-90">
+        <motion.section 
+        initial={{ opacity:0, y:20}}
+        animate={{ opacity:1, y:0 }}
+        transition={{ duration:0.6, ease: easeOut }}
+        className="relative h-screen flex items-center px-90">
             <div className="mr-70">
                 <p className="text-blue-500 mb-2">Hi, my name is</p>
                 <h1 className="text-slate-900 text-6xl font-bold">Justin Moore</h1>
@@ -23,6 +26,13 @@ export default function Hero() {
                     </a>
                 </div>
             </div>
-        </section>
+            <motion.a
+                href="#about"
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-12 left-1/2 -translate-x-1/2 text-blue-400 cursor-pointer">
+                <FaChevronDown size={32} />
+            </motion.a>
+        </motion.section>
     )
 }
